@@ -3,7 +3,7 @@
 
 A small javascript library that generates a random background image that's supposed to look like space with stars and nebula clouds.
 
-[DEMO](https://jamesryan83.github.io/space-bg/)
+[DEMO](https://jamesryan83.github.io/space-background/)
 
 
 ### Configuration
