@@ -1,1 +1,166 @@
-<h1>Hi</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>space-bg.js demo</title>
+
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                height: 100%;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            pre {
+                display: inline-block;
+                text-align: left;
+            }
+
+            h1, label, p, pre, a {
+                color: #ddd;
+            }
+
+            a, p:last-of-type {
+                font-size: 12px;
+            }
+
+            #main-div {
+                text-align: center;
+                overflow-y: auto;
+                height: 100%;
+            }
+
+            .demo-backgrounds {
+                display: inline-block;
+                position: relative;
+            }
+
+            .demo-backgrounds > div {
+                vertical-align: top;
+                display: inline-block;
+                margin: 20px;
+            }
+
+            .demo-backgrounds > div > p {
+                font-weight: bold;
+            }
+
+            .demo-item  {
+                width: 300px;
+                height: 200px;
+                position: relative;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- background -->
+        <div class="sbg"></div>
+
+
+        <div id="main-div">
+            <h1>SPACE BACKGROUND</h1>
+
+            <p>A kind of space-ish looking background with a few options</p>
+            <div><a href="https://jamesryan83.github.io/space-bg/">GITHUB</a></div>
+
+            <div class="demo-backgrounds">
+                <div>
+                    <p>DEFAULT</p>
+                    <div class="demo-item">
+                        <div class="demo-1"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>NO STARS</p>
+                    <div class="demo-item">
+                        <div class="demo-2"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>NO NEBULA</p>
+                    <div class="demo-item">
+                        <div class="demo-3"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>NO BACKGROUND</p>
+                    <div class="demo-item">
+                        <div class="demo-4"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>LOTS OF STARS</p>
+                    <div class="demo-item">
+                        <div class="demo-5"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>LOTS OF NEBULA CLOUDS</p>
+                    <div class="demo-item">
+                        <div class="demo-6"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>BIG NEBULA CLOUDS</p>
+                    <div class="demo-item">
+                        <div class="demo-7"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>BIG STARS</p>
+                    <div class="demo-item">
+                        <div class="demo-8"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>DIFFERENT COLORS 1</p>
+                    <div class="demo-item">
+                        <div class="demo-9"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>DIFFERENT COLORS 2</p>
+                    <div class="demo-item">
+                        <div class="demo-10"></div>
+                    </div>
+                </div>
+            </div>
+
+            <p>Based on <a href="https://codepen.io/beejaymorgan/pen/rjPwmL">this codepen</a></p>
+        </div>
+
+        <script src="dist/space-bg.min.js"></script>
+
+        <script>
+            window.onload = function () {
+
+                // main page background
+                new SpaceBackground({
+                    backgroundColor: "black",
+                    color1: "#010101",
+                    color2: "#010101",
+                    color3: "#010101",
+                    numStars: 0,
+                    maxCloudTransparency: 50
+                });
+
+
+                // Demos
+                new SpaceBackground({ backgroundEl: "demo-1", debug: true });
+                new SpaceBackground({ backgroundEl: "demo-2", numStars: 0 });
+                new SpaceBackground({ backgroundEl: "demo-3", numClouds: 0 });
+                new SpaceBackground({ backgroundEl: "demo-4", backgroundColor: "transparent" });
+                new SpaceBackground({ backgroundEl: "demo-5", numStars: 200 });
+                new SpaceBackground({ backgroundEl: "demo-6", numClouds: 100 });
+                new SpaceBackground({ backgroundEl: "demo-7", maxCloudTransparency: 80 });
+                new SpaceBackground({ backgroundEl: "demo-8", maxStarSize: 40 });
+                new SpaceBackground({ backgroundEl: "demo-9", backgroundColor: "#046380", color1: "#E6E2AF", color2: "#002F2F", color3: "#A7A37E" });
+                new SpaceBackground({ backgroundEl: "demo-10", backgroundColor: "black", color1: "#020202", color2: "#111111", color3: "#212020", starColor: "#c91eb5" });
+            }
+        </script>
+    </body>
+</html>
