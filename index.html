@@ -21,8 +21,19 @@
                 color: #ddd;
             }
 
+            h1 {
+                text-align: left;
+                margin: 40px 0;
+                font-size: 20px;
+            }
+
             a, p:last-of-type {
                 font-size: 12px;
+            }
+
+            #header {
+                text-align: left;
+                padding-left: 50px;
             }
 
             #main-div {
@@ -32,6 +43,7 @@
             }
 
             .demo-backgrounds {
+                margin-top: 20px;
                 display: inline-block;
                 position: relative;
             }
@@ -62,10 +74,12 @@
 
 
         <div id="main-div">
-            <h1>SPACE BACKGROUND</h1>
+            <div id="header">
+                <h1>space-bg.js</h1>
 
-            <p>A kind of space-ish looking background with a few options</p>
-            <div><a href="https://github.com/jamesryan83/space-background/">GITHUB</a></div>
+                <p>A kind of space-ish looking background with a few options</p>
+                <div><a href="https://github.com/jamesryan83/space-background/">GITHUB</a></div>
+            </div>
 
             <div class="demo-backgrounds">
                 <div>
@@ -141,9 +155,9 @@
                 // main page background
                 new SpaceBackground({
                     backgroundColor: "black",
-                    color1: "#010101",
-                    color2: "#010101",
-                    color3: "#010101",
+                    color1: "#0B0B0B",
+                    color2: "#0C0C0C",
+                    color3: "#0D0D0D",
                     numStars: 0,
                     maxCloudTransparency: 50
                 });

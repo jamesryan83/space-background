@@ -25,20 +25,23 @@ There's more examples in the index.html file
 
 ### Options
 
-| Option               | Type   | Action                                 |
-| -------------------- | ------ | -------------------------------------- |
-| backgroundEl         | string | nebula and stars container class       |
-| nebulaEl             | string | nebula element class                   |
-| numClouds            | number | number of nebula clouds (>= 0)         |
-| starsEl              | string | stars element class                    |
-| numStars             | number | number of stars (>= 0)                 |
-| color1               | string | cloud color 1                          |
-| color2               | string | cloud color 2                          |
-| color3               | string | cloud color 3                          |
-| backgroundColor      | string | backgroundEl color                     |
-| maxCloudTransparency | number | maximum clound transparency (0 to 100) |
-| nebulaData           | array  | an array of clouds                     |
-| starsData            | array  | an array of stars                      |
+| Option               | Type     | Action                                 |
+| -------------------- | -------- | -------------------------------------- |
+| backgroundEl         | string   | nebula and stars container class       |
+| nebulaEl             | string   | nebula element class                   |
+| numClouds            | number   | number of nebula clouds (>= 0)         |
+| starsEl              | string   | stars element class                    |
+| numStars             | number   | number of stars (>= 0)                 |
+| color1               | string   | cloud color 1                          |
+| color2               | string   | cloud color 2                          |
+| color3               | string   | cloud color 3                          |
+| starColor            | string   | star color                             |
+| backgroundColor      | string   | backgroundEl color                     |
+| maxCloudTransparency | number   | maximum clound transparency (0 to 100) |
+| maxStarSize          | number   | max star size (>= 0)                   |
+| nebulaData           | array    | an array of clouds                     |
+| starsData            | array    | an array of stars                      |
+| debug                | boolean  | logs the options that were used        |
 
 
 ### Notes
