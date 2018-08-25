@@ -10,7 +10,7 @@ A small javascript library that generates a random background image that's suppo
 
 Add this script from the dist folder to your page
 
-`<script src"space-bg.min.js"></script>`
+`<script src="space-bg.min.js"></script>`
 
 Then add the following element to a page.  The parent element needs to be position: relative
 
